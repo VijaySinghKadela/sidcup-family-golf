@@ -5,8 +5,8 @@ let blur = document.querySelector("#cursor-blur")
 document.addEventListener("mousemove",function(dets){
     cursor.style.left = dets.x+"px"
     cursor.style.top = dets.y+"px"
-    blur.style.left = dets.x - 150 +"px"
-    blur.style.top = dets.y - 150 +"px"
+    blur.style.left = dets.x - 200 +"px"
+    blur.style.top = dets.y - 200 +"px"
 })
 
 
