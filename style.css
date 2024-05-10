@@ -10,6 +10,19 @@ html,body{
     height: 100%;
     width: 100%;
 }
+*::selection{
+    background-color: #fff;
+    color: #95C11E;
+}
+body::-webkit-scrollbar{
+    display: block;
+    width: 8px;
+    background-color: #95C11E;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 50%;
+}
 #cursor{
     height: 20px;
     width: 20px;
@@ -94,6 +107,28 @@ video{
     width: 40%;
 }
 
+#page1 #arrow{
+    height: 250px ;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #95C11E;
+    position: absolute;
+    display: flex;
+    left: -2%;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+#page1 #arrow i{
+    font-size: 50px;
+    font-weight: 100;
+}
+#page1 #arrow:hover{
+    scale: 0.4;
+    background-color: #95C11E;
+}
 #page2{
     min-height: 200vh;
     width: 100%;
@@ -355,6 +390,58 @@ video{
 #footer{
     height: 40vh;
     width: 100%;
-    background:linear-gradient(to left bottom  #24a938, #98d925) ;
- 
+    /* background:linear-gradient(to left bottom  #24a938, #98d925) ; */
+    background:linear-gradient(to left bottom,#24a938,#98d925);
+    /* background-color: red; */
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+    padding: 0 100px;
+}
+#footer>img{
+        position: absolute;
+        left: 0;
+        height: 100%;
+        z-index: 0;
+}
+#f1 img{
+    height: 100px;
+
+}
+#f1 ,#f2 ,#f3 ,#f4{
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+}
+#f1 ,#f2 {
+    font-size: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 8px;
+
+}
+#f2 h3{
+    color: #000;
+}
+#f3 h3{
+    font-size: 30px;
+    white-space: nowrap;
+    text-transform:uppercase ;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+#f4 h4{
+    font-size: 18px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
 }
